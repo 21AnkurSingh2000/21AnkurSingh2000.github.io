@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ankur Singh Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ankur Singh</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/1000213576.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ankur Singh</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Statistician ',
+						'Data Analyst ',
+						'Data Science Enthusiast  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Senior Executive - Junior Team Member Statistician</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://github.com/21AnkurSingh2000" class="btn btn-primary py-3 px-4">GitHub</a> 
+						<a href="https://www.linkedin.com/in/ankur-singh-b5568222b" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/1000213572_2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Ankur Singh</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Executive - Junior Team Member Statistician</span></p>
+										<p><span class="title-s">Experience: </span> <span>1 Year 5 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bangalore, Karnataka, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Minitab</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>JMP</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Power BI</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									
+									<span>Machine Learning and Deep Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Statistician with a Master’s in Statistics, currently working at Cipla and supporting global manufacturing through automation, stability analysis, and data-driven insights.
+									In my current role, I provide end-to-end statistical support to multiple global manufacturing sites, including the preparation and review of statistical reports, 
+									automation of Annual Product Quality Reports using JMP embedded with Python, and comprehensive stability and shelf-life analysis of pharmaceutical products and active ingredients. 
+									I actively work on trend analysis, setting alert and frequency limits for critical process parameters and environmental monitoring data, and contribute to investigations through 
+									root cause analysis and Design of Experiments (DOE) during equipment qualification.
+									Former Data Analyst with strong experience in analytics, machine learning, and visualization, &amp; Time Series Forecasting. 
+									Having experties in deep learning and natural language processing.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Statistician &amp; Data Science Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Pharmaceutical &amp; Marketing Research</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master's in Statistics</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Microsoft Office, Power BI, Davinci</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Gaming &amp; Automobile</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://github.com/21AnkurSingh2000" class="btn btn-primary py-3 px-3">GitHub</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Statistician with hands-on experience in pharmaceutical manufacturing analytics and prior experience as a Data Analyst. Skilled in statistical analysis, machine learning, and data visualization, with a strong track record of transforming complex datasets into actionable insights across multiple domains.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+
+			    <div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">April 2025 - Present</span>
+						<h2>Senior Executive - Junior Team Member Statistician</h2>
+						<span class="position">CIPLA</span>
+						<p class="mt-4">Cipla, a leading global pharmaceutical company, specializes in developing and manufacturing high-quality medicines to improve patient outcomes worldwide. It focuses on data-driven quality, regulatory compliance, and process optimization across global manufacturing operations.
+							<ul>
+								<li>Providing comprehensive statistical support to global manufacturing sites through preparation and review of statistical reports.</li>
+								<li>Automating Annual Product Quality Reports using JMP and Performing stability and shelf-life analysis of pharmaceutical products and active ingredients to evaluate degradation trends and support data-driven forecasting.</li>
+								<li>Conducting root cause analysis for investigations and applying Design of Experiments (DOE) during equipment qualification to support continuous process improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">January 2024 – April 2025</span>
+						<h2>Professional Development & Competitive Examination Preparation</h2>
+						<p class="mt-4">Completed a Data Science Internship, gaining hands-on experience in data analysis, machine learning, and statistical modeling using Python and real-world datasets.
+						<p class="mt-4">Prepared for the DSSSB Statistical Assistant examination, enhancing statistical reasoning and quantitative analysis skills.	
+							<ul>
+								<li>Worked on data preprocessing, exploratory data analysis, feature engineering, and model development for predictive analytics projects.</li>
+								<li>Prepared for the DSSSB Statistical Assistant (Central Government) examination, strengthening expertise in statistics, probability, inference, sampling techniques, and data interpretation.</li>
+								<li>Enhanced problem-solving, quantitative aptitude, and analytical reasoning skills through structured exam-oriented practice and applied learning.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July - December 2023</span>
+						<h2>Data Analyst</h2>
+						<span class="position">IPSOS-MMA</span>
+						<p class="mt-4">IPSOS, a leading global marketing analytics and consultancy firm. It specializes in providing data-driven insights and solutions to help businesses optimize their marketing strategies, improve their return on investment (ROI), and drive growth.
+							<ul>
+								<li>Executing data cleaning and processing tasks utilizing SQL and advanced Excel.</li>
+								<li>Validating data to ensure it meets client's requirements and is presented in a meaningful and usable format.</li>
+								<li>Analyzing data to identify emerging trends and offering valuable insights for future modeling endeavors.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019-Present</span>
+						<h2>Internship/Certificates</h2>
+						<span class="position"></span>
+						<p class="mt-4">INTERNSHIP - Data Science Intern at Unified Mentor (Sep - Nov 2024) | Machine Learning with Python orchestrated by Kryion Technologies Pvt Ltd (Jul 2019 – Aug 2019).
+							<ul>
+								<li>Developing and implementing machine learning models to analyse large datasets and generate insight.</li>
+								<li>Designed predictive models for consumer behaviour and market forecasting.</li>
+								<li>Applied data cleaning, feature extraction, and clustering techniques to enhance research accuracy.</li>
+							</ul>
+							<p class="mt-4">Certificates. 
+							<ul>
+								<li>3-Star Rating in Problem Solving | Hacker Rank</li>
+								<li>Elite Plus Gold Ranking in Foundations of R Software | NPTEL</li>
+								<li>Elite Plus Silver Ranking in Introduction to Biostatistics | NPTEL</li>
+								<li>Introduction to Python | Infosys Springboard</li>
+								<li>Regression Analysis | Infosys Springboard</li>
+								<li>Time Series Analysis Using Python | Infosys Springboard</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2023</span>
+    					<h2>Master's in Statistics</h2>
+    					<span class="position">Banaras Hindu University</span>
+    					<p class="mt-4"> Department of Statistics (CGPA: 8.46)</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2021</span>
+    					<h2>Bachelor of Science</h2>
+    					<span class="position">Banaras Hindu University</span>
+    					<p class="mt-4">Department of Statistics (CGPA: 8.09)</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016 - 2017</span>
+    					<h2>Intermediate</h2>
+    					<span class="position">Happy Model School (CBSC)</span>
+    					<p class="mt-4">Percentage (76.4%)</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014 - 2015</span>
+    					<h2>High School</h2>
+    					<span class="position">Happy Model School (CBSC)</span>
+    					<p class="mt-4">CGPA (8.80)</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1LniH82N7lheVvPZLzffmhHA2krr3NObH/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on Python, Power BI, Machine Learning & Deep Learning.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/21AnkurSingh2000/BHU_AQI-MLR-ARIMA-/blob/main/AQI_BHU_MLR_ARIMA(1%2C1%2C1)_final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/AQI_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/21AnkurSingh2000/BHU_AQI-MLR-ARIMA-/blob/main/AQI_BHU_MLR_ARIMA(1%2C1%2C1)_final.ipynb">Analysis of Air Quality in BHU</a></h3>
+                <p>Conducted hypothesis testing and statistical modelling to analyse AQI trends during COVID-19 lockdowns. Implemented ARIMA and exponential smoothing for forecasting, with accuracy measured using RMSE, MAPE, and ACF/PACF analysis. Automated data preprocessing using Python (Pandas, NumPy, Statsmodels) to evaluate lockdown impacts on air quality.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/21AnkurSingh2000/Climate_Modelling/blob/main/Climate%20Change%20Modelling.ipynb" class="block-20 zoom-effect" style="background-image: url('images/istockphoto-846469400-612x612.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/21AnkurSingh2000/Climate_Modelling/blob/main/Climate%20Change%20Modelling.ipynb">Climate Change Modelling & Sentiment Analysis</a></h3>
+                <p>Analysed global temperature trends using ARIMA and multiple linear regression to assess climate change impact. Integrated semantic analysis to evaluate public sentiment on climate change from Twitter discussions. Utilized advanced visualization and statistical modelling to identify key contributing factors and regional trends.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/21AnkurSingh2000/Automated-APQR-Dashboard-for-CIPLA/blob/main/APQR%20Dashboard.pdf" class="block-20 zoom-effect" style="background-image: url('images/Apqr.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/21AnkurSingh2000/Automated-APQR-Dashboard-for-CIPLA/blob/main/APQR%20Dashboard.pdf">Automated APQR Dashboard - CIPLA</a></h3>
+                <p>Designed and implemented a Power BI dashboard for APQR analysis, integrating multi-site pharmaceutical manufacturing data to monitor quality KPIs, formulation performance, cost of poor quality, process quality trends, and APQR timelines, supporting proactive quality management and continuous improvement initiatives.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/21AnkurSingh2000/Movie/blob/main/Movie-recommendation.ipynb" class="block-20 zoom-effect" style="background-image: url('images/move.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/21AnkurSingh2000/Movie/blob/main/Movie-recommendation.ipynb">Movie recommendation using Deep learning</a></h3>
+                <p>Performed pre processing followed by deep learning algorithm to recommend movie based on our previous choices.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/21AnkurSingh2000/Netflix-Data-Cleaning-Analysis-Visualization-and-Recommendation/blob/main/Netflix%20Data%20Cleaning%2C%20Analysis%2C%20Visualization%20and%20Recommendations.ipynb" class="block-20 zoom-effect" style="background-image: url('images/netflix.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/21AnkurSingh2000/Netflix-Data-Cleaning-Analysis-Visualization-and-Recommendation/blob/main/Netflix%20Data%20Cleaning%2C%20Analysis%2C%20Visualization%20and%20Recommendations.ipynb">Netflix data analysis and visualization</a></h3>
+                <p>Analyzed Netflix movies and TV shows data to identify content distribution, trends over time, country-wise performance, ratings, genres, and viewer patterns using data visualization techniques.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/21AnkurSingh2000/GDP_INDIA-MLR-and-AR-3-/blob/main/GDP_AR(3).ipynb" class="block-20 zoom-effect" style="background-image: url('images/1000.webp');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/21AnkurSingh2000/GDP_INDIA-MLR-and-AR-3-/blob/main/GDP_AR(3).ipynb">Forcasting GDP of india using Time Series Analysis</a></h3>
+                <p>Performing Exploratory data analysis followed by Time series Model to forcast India's GDP using Python.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/21AnkurSingh2000/M.Sc-Project-Classification/blob/main/Diabetes_final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/dib.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/21AnkurSingh2000/M.Sc-Project-Classification/blob/main/Diabetes_final.ipynb">Predicting whether a person is prone to diabetes or not</a></h3>
+				  <p>Developed a Machine learning model to predict whether a person is prone to diabetes or not based on its physical conditions.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Family members</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong>
+                <span>Mentored Apprentice</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="26">0</strong>
+                <span>Age</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/21AnkurSingh2000" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bangalore, Karnataka, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://7905199420">+91 7905199420</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:2112000ankur@gmail.com.com">2112000ankur@gmail.com.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1LniH82N7lheVvPZLzffmhHA2krr3NObH/view?usp=sharing">Resume Link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/cujYW55vCjjLU8HaA" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/ankur-singh-b5568222b/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+				      <li class="ftco-animate"><a href="https://www.instagram.com/invites/contact/?igsh=7ldyt1mya8vn&utm_content=mh72rjm"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
